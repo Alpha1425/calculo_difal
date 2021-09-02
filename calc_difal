@@ -1,0 +1,72 @@
+#-*- coding: utf-8 -*-
+
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("----------------------------------------Calculadora DIFAL 2019 em diante--------------------------------------------")
+print("--------------------------------------------------by Alpha-1425-----------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+
+valorproduto = float(input("Insira uma valor para o PRODUTO: "))
+valorfrete = float(input("Insira um valor para o frete: "))
+outrasdespesas = float(input("Insira uma valor para outras despesas: "))
+descontos = float(input("Insira uma valor do desconto: "))
+ipi = float(input("Insira uma valor para o IPI: "))
+soma_basedoicms = (valorproduto + valorfrete + outrasdespesas - descontos + ipi)
+print("O Valor da base de Cálculo do ICMS é:", soma_basedoicms)
+print("Pronto, agora vamos ao calculo do FCP: ")
+
+
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------Agora vamos calcular o Fundo de Combate à Pobreza, ou o FCP:------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+
+valorfcp = int(input("Insira um valor de 1% ou 2% porcento que será destinado ao fundo de combate a pobreza: "))
+fcp = (soma_basedoicms * valorfcp / 100)
+print("O Valor do Fundo de Combate à PobrezaFCP é de:", fcp)
+
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("-------------------------Agora vamos calcular o DIFAL ou Diferencial de Alíquota do ICMS:---------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+print("--------------------------------------------------------------------------------------------------------------------")
+
+
+difal_intra = int(input("Insira uma valor para a alíquita do ICMS intra estadual ou seja entre estados: "))
+print("O Valor da alíquita do ICMS intra estadual é de:", difal_intra)
+difal_inter = int(input("Entre com o valor da Alíquota de ICMS interestadual: "))
+print("O Valor da Alíquota de ICMS interestadual é de:", difal_inter)
+soma_diferenca1 = (difal_intra - difal_inter)
+print("O Valor da diferença em % Alíquota do ICMS Intra para a % Alíquota do ICMS Inter foi de: ", soma_diferenca1 /100)
+soma_difal = (soma_diferenca1 /100 * soma_basedoicms)
+print("O Valor do Fundo de Combate à PobrezaFCP é de:", soma_difal)
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+                    
+
+
